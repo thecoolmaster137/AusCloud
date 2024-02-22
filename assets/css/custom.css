@@ -1,3 +1,189 @@
 .custLogoSize{
     max-width: 40% !important;
 }
+
+.policy_section{
+    /* border: 2px solid red; */
+    height: 100vh;
+    padding: 2vh 5vw 2vh 5vw!important;
+}
+
+.policy_section iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.padding_none{
+    padding: 0 !important;
+}
+
+.padding_bottom_none{
+    padding-bottom: 0 !important;
+}
+
+.padding_top_none{
+    padding-top: 0 !important;
+}
+
+
+/* client logo style */
+
+.marquee-full-width {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+.marquee-box {
+	overflow-x: hidden !important;
+	display: flex !important;
+	flex-direction: row !important;
+	position: relative;
+	width: 100%;
+}
+.marquee {
+	flex: 0 0 auto;
+	min-width: 100%;
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	animation: marqueescroll 100s linear 0s infinite;
+	animation-play-state: running;
+	animation-delay: 0s;
+	animation-direction: normal;
+}
+.marquee figure
+{
+	margin-right: 3rem;
+	margin-left: 3rem;
+	padding: 5px;
+	max-width: 250px;	
+	text-align: center;
+	vertical-align: top;
+}
+.marquee figcaption
+{
+	display:none;
+	font-weight: 80%;
+	color: #333;
+	line-height: 1.2;
+}
+.marquee img
+{
+	margin: 0 auto;
+	height: auto;
+	max-height: 3.5rem;
+	max-width: 100%;
+	background: #fdfdfd;
+	border: none;
+}
+.marquee-box:hover div {
+	animation-play-state: running;
+}
+.marquee-box:active div {
+	animation-play-state: running;
+}
+@keyframes marqueescroll {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+
+/* ------------ Main Point List ------------------ */
+
+.mainList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.mainList .num {
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.mainList .num h3 {
+    position: relative;
+    left: -1.5rem;
+    color: #3d3d3d;
+    font-size: 0.85rem;
+    transition: 0.25s;
+}
+
+
+.mainList .num:hover {
+    background-color: #ffffff;
+}
+
+.mainList .num:hover:before {
+    opacity: 0.5;
+}
+
+.mainList .num:hover h3 {
+    left: 1rem;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.mainList .num:before {
+    content: '';
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    width: 2rem;
+    opacity: 0.05;
+    transition: 0.25s;
+}
+
+.mainList .num:nth-child(1):before {
+    content: '1';
+}
+
+.mainList .num:nth-child(2):before {
+    content: '2';
+}
+
+.mainList .num:nth-child(3):before {
+    content: '3';
+}
+
+.mainList .num:nth-child(4):before {
+    content: '4';
+}
+
+.mainList .num:nth-child(5):before {
+    content: '5';
+}
+
+.mainList .num:nth-child(6):before {
+    content: '6';
+}
+
+.mainList .num:nth-child(7):before {
+    content: '7';
+}
+
+.mainList .num:nth-child(8):before {
+    content: '8';
+}
+
+.mainList .num:nth-child(9):before {
+    content: '9';
+}
+
+.mainList .num:nth-child(10):before {
+    content: '10';
+}
