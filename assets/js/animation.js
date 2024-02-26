@@ -3,3 +3,4 @@ AOS.init({
     offset: 120,
     easing: 'ease-in-out'
 })
+
