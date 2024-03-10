@@ -1,0 +1,18 @@
+/* --------------------------- */
+
+.accordian-section .accordion-card .btn-link:before {
+    content: "!";
+}
+
+
+.accordian-section .accordion-card .collapsed:before {
+    content: "!";
+    background-color: transparent;
+    color: var(--e-global-color-secondary);
+    border: 1px solid var(--e-global-color-secondary);
+    border-radius: 100px;
+    text-align: center;
+    background-image: none;
+    border-image: none;
+}
+
